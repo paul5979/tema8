@@ -58,7 +58,13 @@
 
 
 
-    <script></script>
+    <script>
+        const values = [50, 80, 30];
+        document.querySelectorAll(".bars line").forEach((bar, i) => {
+            bar.setAttribute("y1", 100 - values[i]);
+        });
+
+    </script>
 </body>
 
 </html>
