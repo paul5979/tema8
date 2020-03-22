@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Søjledigram</title>
+</head>
+
+<style>
+    #barchart {
+        max-width: 500px;
+    }
+
+    #chart line {
+        stroke: #555;
+        stroke-width: .5;
+    }
+
+
+    #chart text {
+        font-size: 5px;
+        font-family: sans-serif;
+    }
+
+    .bars {
+        stroke-width: 20;
+        stroke: orange;
+    }
+
+</style>
+
+
+<body>
+
+    <svg id="barchart" viewbox="-20 -10 230 120">
+        <g id="chart">
+            <text x="0" y="-3">Barchart</text>
+            <text x="-10" y="5">100</text>
+            <text x="-8" y="52">50</text>
+            <text x="-5" y="100">0</text>
+            <line x1="0" x2="0" y1="100" y2="0" />
+            <line x1="0" x2="200" y1="0" y2="0" />
+            <line x1="0" x2="200" y1="50" y2="50" />
+            <line x1="0" x2="200" y1="100" y2="100" />
+        </g>
+
+
+        <g class="bars">
+            <line x1="20" x2="20" y1="10" y2="100" />
+            <line x1="50" x2="50" y1="50" y2="100" />
+            <line x1="80" x2="80" y1="20" y2="100" />
+
+
+        </g>
+    </svg>
+
+
+
+
+    <script></script>
+</body>
+
+</html>
